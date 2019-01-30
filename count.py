@@ -5,7 +5,7 @@ for num in list:
          pos_count += 1
     elif num ==0:
          zero_count == 0
-    else :
+    else:
          neg_count -= 1
 print("positive number",pos_count)
 print("negative number",neg_count)
