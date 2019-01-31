@@ -1,4 +1,4 @@
-def sum(numbers):
+def sum(a,b,c,d,e):
     total =  0
     for x in numbers:
         total += x
