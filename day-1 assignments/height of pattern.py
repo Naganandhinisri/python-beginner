@@ -6,3 +6,7 @@ for i in range(0,rows):
     print("\r")
 
 print("height=number of rows",rows)
+
+rows = input("enter the number of rows")
+value = count(rows)
+print("{}{}".format(i, j)for j in range(1, i+1) for i in range(0, rows))
