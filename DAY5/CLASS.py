@@ -1,7 +1,10 @@
 class Fruit:
-  def apple():
+  def apple(self):
       print(" good for health")
 
 
 f = Fruit()
 f.apple()
+
+
+# print(hex(id(f)))

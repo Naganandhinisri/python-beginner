@@ -1,21 +1,13 @@
-string = input("enter the string")
-number = len(string)
-def non_repeatation():
-    for i in range(0,number):
-        if i == 0:
-            if string[i] != string[i+1]:
-                print(string[i])
-                break
+a = str(input("enter the string"))
+size = len(a)
+if a[0] != a[1]:
 
-        elif i == number+1:
-            if string[i] != string[i-1]:
-                print(string[i])
-                break
-
-        else:
-            if string[i] != string[i+1] and string[i] != string[i-1]:
-                print(string[i])
+    print(a[0])
+if a[size-2] != a[size-1]:
+    print(a[size-1])
+for i in range(1,size-3):
 
 
-non_repeatation()
+   if a[i] != a[i-1] and a[i] != a[i+1]:
 
+    print(a[i])

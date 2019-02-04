@@ -1,8 +1,10 @@
 class Fruit:
     number = "100"
-  def -init-(self,a,b):
+def _init_(self,a,b):
       self.name = "apple"
       self.count = "2"
 
-p = Fruit(apple,2)
-f.apple()
+
+
+p = Fruit("apple",2)
+

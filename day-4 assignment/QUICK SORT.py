@@ -12,12 +12,12 @@ def partition(list, lowIndex, highIndex):
 
     for i in range (lowIndex, highIndex):
      if list < list(pivot):
-        # list[i],list[divider] = list[divider],list[i]
+        list[i],list[divider] = list[divider],list[i]
         divider += 1
-    # list[pivot], list[divider] = list[divider], list[pivot]
+    list[pivot], list[divider] = list[divider], list[pivot]
     return divider
 
 
-list = [4, 2 , 1, 7 ,3, 6 ]
+
 quicksort(list, 0, 5)
 print(list)

@@ -12,8 +12,10 @@ def binary_search(list):
             break
         elif searchelement < middleelement:
              higherIndex = middleelement-1
+             print("number is found")
         else:
              lowerIndex = middleelement+1
+             print("number is found")
 
 
 print(binary_search(list))

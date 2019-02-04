@@ -2,7 +2,7 @@ a =  60
 
 while True:
     b = int(input("enter the number"))
-    if  a==b:
+    if  a == b:
         print("number is correct")
         break
     elif b>a:
