@@ -1,19 +1,37 @@
-class Manager:
-    def __init__(self,managerName,managerAge):
-        self.name = managerName
-        self.age = managerAge
+class Company:
+    def __init__(self,companyName,emailid):
+        self.name = companyName
+        self.emailid = emailid
 
     def display(self):
         print(self.name)
+        print(self.emailid)
+
+
+
+class Manager(Company) :
+    def __init__(self,companyName,emailid,managername,phonenumber):
+        Company. __init__(self,companyName,emailid)
+        self.managerName = managername
+        self.phonenumber = phonenumber
+
 
     def show(self):
-        print(self.age)
+        print(self.managerName)
+        print(self.phonenumber)
 
 
-class Factory(Manager,Employee) :
-    def __init__(self,name,age,employeesalary):
-        Manager. __init__(self,name,age)
-        Employee.__init__(self,employeesalary)
+class Customers(Company):
+    def __init__(self, companyName, emailid,productName):
+        Company.__init__(self, companyName, emailid)
+        self.productName = productName
 
-    def disp_id(self):
-        print( self.id)
+    def disp(self):
+        print(self.productName)
+
+
+
+customer1 = Customers('Thoughtworks','thoughtworks.com','app')
+    customer.display()
+factory1.show()
+print(factory1.getsalary())
