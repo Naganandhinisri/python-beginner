@@ -8,7 +8,3 @@ while True:
    j = int(input("enter the number of columns"))
    matrix[i][j] = "*"
    print(matrix)
-
-# a = [[1,2, 3],[4, 5, 6]]
-# print(a[0])
-
